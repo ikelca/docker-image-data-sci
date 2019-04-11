@@ -23,7 +23,6 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
 RUN pip --no-cache-dir install jupyter Theano Keras SciKit-Learn pandas Bokeh Seaborn NLTK Scrapy tensorflow XGBoost LightGBM CatBoost Dist-keras  
 RUN ipython kernel install --prefix /tmp
 
-RUN pip install --upgrade --no-cache-dir https://get.graphlab.com/GraphLab-Create/2.1/ikelca@gmail.com/DC02-2F2F-D2ED-6601-5FED-525F-10C3-4B28/GraphLab-Create-License.tar.gz
 
 ENV SPARK_APPLICATION_ARGS ""
 ENV JAVA_HOME=/etc/alternatives/java_sdk_openjdk
