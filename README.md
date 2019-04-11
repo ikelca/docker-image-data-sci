@@ -11,5 +11,5 @@
 #### scala2.12.7
 #### jdk1.8
 # Usage
-#### docker pull ikelca/repo:data-sci
+#### docker pull ikelca/repo:centos-data-sci
 
