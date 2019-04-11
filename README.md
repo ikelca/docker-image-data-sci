@@ -1,5 +1,5 @@
-# docker-image-data-sci
-Built on centos:latest, this image contains packages for creating a image with data science purpose.
+# Docker image for Data Science
+### Built on centos:latest, this image contains packages for creating a image with data science purpose.
 
 ## Packages include:
 #### python2.7 
@@ -11,5 +11,5 @@ Built on centos:latest, this image contains packages for creating a image with d
 #### scala2.12.7
 #### jdk1.8
 # Usage
-#### docker pull
+#### docker pull ikelca/repo:data-sci
 
