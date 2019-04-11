@@ -22,7 +22,7 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
 
 RUN pip --no-cache-dir install jupyter Theano Keras SciKit-Learn pandas Bokeh Seaborn NLTK Scrapy tensorflow XGBoost LightGBM CatBoost Dist-keras  
 RUN ipython kernel install --prefix /tmp
- 
+  
 
 ENV SPARK_APPLICATION_ARGS ""
 ENV JAVA_HOME=/etc/alternatives/java_sdk_openjdk
