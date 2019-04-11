@@ -13,9 +13,7 @@ RUN yum -y update;yum clean all
 RUN yum -y install wget yum-plugin-ovl centos-release-scl; yum clean all
 
 RUN yum -y install gcc openssl-devel bzip2-devel python-devel libffi-devel;yum clean all
-
-RUN yum install -y wget openssh-server openssh-clients which findspark lsof telnet net-tools psmisc passwd openssl-devel bzip2-devel java-1.8.0-openjdk-devel rh-python36 nano;yum clean all 
-
+ 
 
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
     && python2 get-pip.py 
@@ -23,6 +21,7 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
 RUN pip --no-cache-dir install jupyter Theano Keras SciKit-Learn pandas Bokeh Seaborn NLTK Scrapy tensorflow XGBoost LightGBM CatBoost Dist-keras  
 RUN ipython kernel install --prefix /tmp
 
+RUN pip install --upgrade --no-cache-dir https://get.graphlab.com/GraphLab-Create/2.1/ikelca@gmail.com/DC02-2F2F-D2ED-6601-5FED-525F-10C3-4B28/GraphLab-Create-License.tar.gz
 
 ENV SPARK_APPLICATION_ARGS ""
 ENV JAVA_HOME=/etc/alternatives/java_sdk_openjdk
